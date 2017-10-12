@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import {Book} from "./book";
+import {Book} from './book';
 
 @Injectable()
 export class BookDataService {
+  constructor() { }
+
   books: Book[] = [
     {
       title: 'Design Patterns',
@@ -41,7 +43,4 @@ export class BookDataService {
       }
     }
   ];
-
-  constructor() { }
-
 }
