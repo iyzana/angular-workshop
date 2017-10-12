@@ -2,7 +2,9 @@
   mouse-cursor
 </p>
 
-<div (mousemove)="onMousemove($event)" style="height: 400px; width: 400px; border: 1px solid">
-  X: {{x}}<br>
-  Y: {{y}}
+<div (mousemove)="onMouseMove($event)" class="mouse-box" style="height: 400px; width: 400px; border: 1px solid">
+  &#123;<br>
+  &nbsp;&nbsp;x = {{x}},<br>
+  &nbsp;&nbsp;y = {{y}}<br>
+  &#125;
 </div>

@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mouse-cursor.component.css']
 })
 export class MouseCursorComponent implements OnInit {
-  x: number;
-  y: number;
+  x = 0;
+  y = 0;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onMousemove($event: MouseEvent) {
+  onMouseMove($event: MouseEvent) {
     this.x = $event.clientX;
     this.y = $event.clientY;
   }
