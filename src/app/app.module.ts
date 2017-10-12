@@ -6,6 +6,7 @@ import { InfoBoxComponent } from './info-box/info-box.component';
 import { MouseCursorComponent } from './mouse-cursor/mouse-cursor.component';
 import { TitleBoxComponent } from './title-box/title-box.component';
 import { BookListComponent } from './book-list/book-list.component';
+import {BookDataService} from './shared/book-data.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { BookListComponent } from './book-list/book-list.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    BookDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
