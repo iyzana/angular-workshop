@@ -14,7 +14,7 @@ export class MouseCursorComponent implements OnInit {
   ngOnInit() {
   }
 
-  onMouseMove($event: MouseEvent) {
+  onMouseMove($event: MouseEvent): void {
     this.x = $event.clientX;
     this.y = $event.clientY;
   }

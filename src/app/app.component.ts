@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'notrobots';
 
-  onTitleClicked($event: string) {
+  onTitleClicked($event: string): void {
     this.title = $event + this.title;
   }
 }
