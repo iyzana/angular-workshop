@@ -16,6 +16,6 @@ export class TitleBoxComponent implements OnInit {
   }
 
   sendPing() {
-    this.titleClicked.emit('i definitely have feelings');
+    this.titleClicked.emit('totally');
   }
 }
