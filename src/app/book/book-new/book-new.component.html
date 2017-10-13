@@ -1,0 +1,41 @@
+<h4>Create</h4>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    Title:
+    <input type="text" formControlName="title"/>
+  </label><br>
+  <div [hidden]="!form.get('title').hasError('required') || form.get('title').pristine && !error">Title is required!</div>
+
+  <label>
+    Subtitle:
+    <input type="text" formControlName="subtitle"/>
+  </label><br>
+  <div [hidden]="!form.get('subtitle').hasError('required') || form.get('subtitle').pristine && !error">Subtitle is required!</div>
+
+  <label>
+    Isbn:
+    <input type="text" formControlName="isbn"/>
+  </label><br>
+  <div [hidden]="!form.get('isbn').hasError('required') || form.get('isbn').pristine && !error">Isbn is required!</div>
+  <div [hidden]="!form.get('isbn').hasError('minlength') || form.get('isbn').pristine && !error">Isbn is too short!</div>
+
+  <label>
+    Abstract:
+    <input type="text" formControlName="abstract"/>
+  </label><br>
+  <div [hidden]="!form.get('abstract').hasError('required') || form.get('abstract').pristine && !error">Abstract is required!</div>
+
+  <label>
+    Pages:
+    <input type="number" formControlName="numPages"/>
+  </label><br>
+  <div [hidden]="!form.get('numPages').hasError('required') || form.get('numPages').pristine && !error">Pages are required!</div>
+
+  <label>
+    Author:
+    <input type="text" formControlName="author"/>
+  </label><br>
+  <div [hidden]="!form.get('author').hasError('required') || form.get('author').pristine && !error">Author is required!</div>
+
+  <button type="submit">Save</button>
+</form>
