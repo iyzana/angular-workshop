@@ -18,4 +18,12 @@ export class BookDataService {
   getBookByIsbn(isbn: string): Observable<Book> {
     return this.http.get(`${this.bookService}/books/${isbn}`);
   }
+
+  updateBook(book: Book): void {
+    this.http.put(`${this.bookService}/books/${book.isbn}`, book).subscribe();
+  }
+
+  createBook(book: Book): void {
+    this.http.post(`${this.bookService}/books`, book).subscribe();
+  }
 }

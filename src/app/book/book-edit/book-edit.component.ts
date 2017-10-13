@@ -21,6 +21,7 @@ export class BookEditComponent implements OnInit {
   }
 
   save() {
-    console.log('edit', this.book);
+    console.log('update', this.book);
+    this.bookData.updateBook(this.book);
   }
 }

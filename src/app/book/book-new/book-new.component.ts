@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {hasOwnProperty} from 'tslint/lib/utils';
+import {BookDataService} from '../shared/book-data.service';
 
 @Component({
   selector: 'book-new',
@@ -12,7 +13,7 @@ export class BookNewComponent implements OnInit {
   form: FormGroup;
   error = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private bookData: BookDataService) {
   }
 
   ngOnInit() {
@@ -35,6 +36,7 @@ export class BookNewComponent implements OnInit {
   onSubmit() {
     if (this.form.valid) {
       console.log('create', this.form.value);
+      this.bookData.createBook(this.form.value);
     } else {
       this.error = true;
     }
