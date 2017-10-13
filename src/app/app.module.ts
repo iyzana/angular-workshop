@@ -1,13 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { InfoBoxComponent } from './info-box/info-box.component';
-import { MouseCursorComponent } from './mouse-cursor/mouse-cursor.component';
-import { TitleBoxComponent } from './title-box/title-box.component';
-import { BookListComponent } from './book-list/book-list.component';
+import {AppComponent} from './app.component';
+import {InfoBoxComponent} from './info-box/info-box.component';
+import {MouseCursorComponent} from './mouse-cursor/mouse-cursor.component';
+import {TitleBoxComponent} from './title-box/title-box.component';
+import {BookListComponent} from './book-list/book-list.component';
 import {BookDataService} from './shared/book-data.service';
 import {HttpClientModule} from '@angular/common/http';
+import {routing} from './app.routing';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
     BookListComponent
   ],
   imports: [
+    routing,
     BrowserModule,
     HttpClientModule
   ],
@@ -26,4 +28,5 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
