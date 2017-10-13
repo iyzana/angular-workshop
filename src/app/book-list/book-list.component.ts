@@ -8,7 +8,7 @@ import {Book} from '../shared/book';
   styleUrls: ['./book-list.component.css']
 })
 export class BookListComponent implements OnInit {
-  private books: Book[];
+  books: Book[];
 
   constructor(private bookData: BookDataService) {
   }
