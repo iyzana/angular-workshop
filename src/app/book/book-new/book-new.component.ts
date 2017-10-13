@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {hasOwnProperty} from 'tslint/lib/utils';
 import {BookDataService} from '../shared/book-data.service';
 
 @Component({
