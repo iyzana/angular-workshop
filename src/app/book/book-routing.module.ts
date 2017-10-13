@@ -4,18 +4,16 @@ import {BookComponent} from './book.component';
 import {BookListComponent} from './book-list/book-list.component';
 import {BookDetailComponent} from './book-detail/book-detail.component';
 import {ConfirmCandeactivateGuard} from './shared/confirm-candeactivate.guard';
+import {BookEditComponent} from './book-edit/book-edit.component';
 
 const routes: Routes = [{
   path: '',
   component: BookComponent,
-  children: [{
-    path: '',
-    component: BookListComponent
-  }, {
-    path: ':isbn',
-    component: BookDetailComponent,
-    canDeactivate: [ConfirmCandeactivateGuard]
-  }]
+  children: [
+    { path: '', component: BookListComponent },
+    { path: ':isbn', component: BookDetailComponent, canDeactivate: [ConfirmCandeactivateGuard] },
+    { path: ':isbn/edit', component: BookEditComponent },
+  ]
 }];
 
 @NgModule({

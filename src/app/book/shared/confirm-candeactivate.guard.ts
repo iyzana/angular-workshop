@@ -10,6 +10,6 @@ export class ConfirmCandeactivateGuard implements CanDeactivate<BookDetailCompon
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
     nextState?: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return confirm('Are you sure?');
+    return true; // confirm('Are you sure?');
   }
 }

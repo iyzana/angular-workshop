@@ -1,0 +1,18 @@
+input, input:focus {
+  border: none;
+  color: #fdf6e3;
+  background-color: #002b36;
+  border-bottom: 2px solid #fdf6e3;
+}
+
+input.ng-invalid {
+  border-bottom: 2px solid #dc322f;
+}
+
+input, div {
+  margin-bottom: 10px;
+}
+
+div {
+  color: #dc322f;
+}

@@ -1,9 +1,8 @@
 <div *ngIf="book">
-  <h3>
-    {{book.title}}<br>
-    <small>{{book.subtitle}}</small>
-  </h3>
-  <p>by {{book.author}}</p>
-  <p>isbn {{book.isbn}}</p>
-  {{book.abstract}}
+  <span class="heading">{{book.title}}</span> <a [routerLink]="['edit']">(edit)</a><br>
+  <small>{{book.subtitle}}</small><br>
+  <br>
+  by {{book.author}}<br>
+  isbn {{book.isbn}}<br><br>
+  {{book.abstract}}<br>
 </div>
