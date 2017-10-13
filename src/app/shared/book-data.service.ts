@@ -14,4 +14,8 @@ export class BookDataService {
   getBooks(): Observable<Book[]> {
     return this.http.get(`${this.bookService}/books`);
   }
+
+  getBookByIsbn(isbn: string): Observable<Book> {
+    return this.http.get(`${this.bookService}/books/${isbn}`);
+  }
 }

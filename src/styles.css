@@ -4,6 +4,10 @@ body {
   color: #fdf6e3;
 }
 
+a {
+  color: #586e75;
+}
+
 * {
   font-family: sans-serif;
 }

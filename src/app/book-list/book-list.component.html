@@ -2,7 +2,7 @@
   <ul>
     <li *ngFor="let book of books">
       <p>
-        {{book.title}}<br>
+        <a [routerLink]="[book.isbn]">{{book.title}}</a><br>
         <small>{{book.subtitle}}</small>
       </p>
       isbn {{book.isbn}}<br>
