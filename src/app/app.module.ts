@@ -5,10 +5,8 @@ import {AppComponent} from './app.component';
 import {InfoBoxComponent} from './info-box/info-box.component';
 import {MouseCursorComponent} from './mouse-cursor/mouse-cursor.component';
 import {TitleBoxComponent} from './title-box/title-box.component';
-import {BookDataService} from './book/shared/book-data.service';
 import {HttpClientModule} from '@angular/common/http';
 import {routing} from './app.routing';
-import {BookModule} from './book/book.module';
 
 @NgModule({
   declarations: [
@@ -19,13 +17,10 @@ import {BookModule} from './book/book.module';
   ],
   imports: [
     routing,
-    BookModule,
     BrowserModule,
     HttpClientModule
   ],
-  providers: [
-    BookDataService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
