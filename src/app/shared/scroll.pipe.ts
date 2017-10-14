@@ -1,8 +1,7 @@
 import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
-  name: 'scroll',
-  pure: false
+  name: 'scroll'
 })
 export class ScrollPipe implements PipeTransform {
 
