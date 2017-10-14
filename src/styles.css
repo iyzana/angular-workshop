@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #002b36;
-  color: #fdf6e3;
+  color: #839496;
 }
 
 a {
@@ -12,7 +12,7 @@ input, input:focus {
   border: none;
   color: #fdf6e3;
   background-color: #002b36;
-  border-bottom: 2px solid #fdf6e3;
+  border-bottom: 2px solid #839496;
 }
 
 input.ng-invalid.ng-dirty {

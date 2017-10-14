@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BookDetailComponent } from './book-detail.component';
 import {BookDataService} from '../shared/book-data.service';
 import {RouterTestingModule} from '@angular/router/testing';
-import {BookDataMockService} from '../shared/book-data-mock.service';
+import {BookDataMockService} from '../shared/book-data.service.mock';
 
 describe('BookDetailComponent', () => {
   let component: BookDetailComponent;
