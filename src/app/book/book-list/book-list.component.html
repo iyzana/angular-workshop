@@ -1,8 +1,8 @@
 <ul>
-  <li *ngFor="let book of books">
+  <li *ngFor="let book of books | async">
     <p>
-      <a [routerLink]="[book.isbn]">{{book.title}}</a><br>
-      <small>{{book.subtitle}}</small>
+      <a [routerLink]="[book.isbn]">{{book.title | scroll }}</a><br>
+      <small>{{book.subtitle | scroll}}</small>
     </p>
   </li>
   <a [routerLink]="['new']">New book</a>

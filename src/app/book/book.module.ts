@@ -10,6 +10,7 @@ import {ConfirmCandeactivateGuard} from './shared/confirm-candeactivate.guard';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BookNewComponent } from './book-new/book-new.component';
+import {ScrollPipe} from '../shared/scroll.pipe';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { BookNewComponent } from './book-new/book-new.component';
     BookListComponent,
     BookDetailComponent,
     BookEditComponent,
-    BookNewComponent
+    BookNewComponent,
+    ScrollPipe
   ],
   providers: [
     BookDataService,
